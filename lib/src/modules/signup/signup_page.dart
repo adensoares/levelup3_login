@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:levelup3_login/src/shared/clippers/blue_clipper.dart';
+import 'package:levelup3_login/src/shared/clippers/fog_clipper.dart';
+import 'package:levelup3_login/src/shared/clippers/sky_clipper.dart';
+import 'package:levelup3_login/src/shared/clippers/tree_clipper.dart';
+import 'package:levelup3_login/src/shared/painters/background_painter.dart';
 import 'package:levelup3_login/src/shared/validators/form_validators.dart';
 import 'package:levelup3_login/src/shared/widgets/shared_widgets.dart';
 
@@ -26,7 +29,7 @@ class _SignupPageState extends State<SignupPage> {
             Stack(
               children: [
                 ClipPath(
-                  clipper: BlueClipper(),
+                  clipper: SkyClipper(),
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.5,
                     width: MediaQuery.of(context).size.width,
@@ -44,12 +47,91 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                 ),
                 Positioned(
+                  bottom: 40,
+                  left: 20,
+                  child: ClipPath(
+                    clipper: TreeClipper(),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 20,
+                  left: -7,
+                  child: ClipPath(
+                    clipper: TreeClipper(),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  left: 50,
+                  child: ClipPath(
+                    clipper: TreeClipper(),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
                   bottom: 85,
                   right: 30,
                   child: Image.asset(
                     'assets/img/reindeer.png',
                     scale: 15.0,
                   ),
+                ),
+                Positioned(
+                  bottom: 80,
+                  right: -60,
+                  child: ClipPath(
+                    clipper: TreeClipper(),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 50,
+                  right: -35,
+                  child: ClipPath(
+                    clipper: TreeClipper(),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  width: MediaQuery.of(context).size.width,
+                  child: Opacity(
+                    opacity: 0.30,
+                    child: ClipPath(
+                      clipper: FogClipper(),
+                      child: Container(
+                        height: 200,
+                        width: 100,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                CustomPaint(
+                  painter: BackgroundPainter(),
                 ),
               ],
             ),

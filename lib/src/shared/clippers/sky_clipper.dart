@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class BlueClipper extends CustomClipper<Path> {
+class SkyClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     var path = new Path();

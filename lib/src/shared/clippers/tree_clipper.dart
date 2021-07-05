@@ -1,24 +1,24 @@
-// import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart';
 
-// class BlueClipper extends CustomClipper<Path> {
-//   @override
-//   Path getClip() {
-//     var path = new Path();
-//     path.addPolygon(
-//       [
-//         new Offset(dx, size.height),
-//         new Offset(dx + width, size.height),
-//         new Offset(dx + width / 2, size.height - height),
-//       ],
-//       true,
-//     );
+class TreeClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    var path = new Path();
+    path.addPolygon(
+      [
+        new Offset(12.0, size.height),
+        new Offset(12.0 + 35.0, size.height),
+        new Offset(12.0 + 35.0 / 2, size.height - 70),
+      ],
+      true,
+    );
 
-//     path.close();
-//     return path;
-//   }
+    path.close();
+    return path;
+  }
 
-//   @override
-//   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-//     return true;
-//   }
-// }
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+    return true;
+  }
+}
