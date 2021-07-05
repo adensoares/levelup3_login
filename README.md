@@ -12,7 +12,7 @@ Level Up são desafios propostos pela Raro Academy para consolidar o conheciment
 As telas de login e cadastro atualmente estão bem bem semelhantes, tanto visualmente quanto nas suas lógicas de validação.
 
 ## Página de Cadastro
-<img src="./assets/img/login.png" height="500" />
+<img src="./assets/img/signup.png" height="500" />
 
 ## To Do
 - [ ] Criar página de "Esqueceu a senha?"
