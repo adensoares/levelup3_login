@@ -1,16 +1,18 @@
-# levelup3_login
+# Level Up #3 - Calculadora
 
-A new Flutter project.
+Terceiro desafio proposto pela Raro Academy.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Level Up são desafios propostos pela Raro Academy para consolidar o conhecimento passado durante as aulas semanais da academia. Para o Level Up #3, foi solicitado que fizéssemos uma sistema de Login com validação de campos, algo que foi trabalhado durante durante algumas aulas da segunda semana da Raro Academy.
 
-A few resources to get you started if this is your first Flutter project:
+<img src="./assets/img/" height="500" />
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## To Do
+- [ ] Adicionar imagem ao README.md"
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## Referência
+
+- O layout teve como inspiração o template criado por [ruki](https://dribbble.com/weizhi) disponível no [Dribbble](https://dribbble.com/shots/2695917-Weather-Login-App/attachments/2695917-Weather-Login-App?mode=media).
